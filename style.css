@@ -505,6 +505,22 @@ a:hover {
     max-width: 600px;
 }
 
+.publication-stats {
+    display: flex;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+}
+
+.stat-item {
+    font-size: 0.9rem;
+    color: var(--color-ink-muted);
+}
+
+.stat-item strong {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+}
+
 .publications-list {
     padding: var(--space-xl) 0;
 }
@@ -535,6 +551,13 @@ a:hover {
     border-bottom: none;
 }
 
+.publication-item.featured {
+    background: var(--color-paper-warm);
+    padding: var(--space-md);
+    margin: 0 calc(-1 * var(--space-md));
+    border-left: 3px solid var(--color-accent);
+}
+
 .publication-info h3 {
     font-size: 1.1rem;
     margin-bottom: var(--space-xs);
@@ -543,6 +566,19 @@ a:hover {
 .publication-meta {
     font-size: 0.9rem;
     color: var(--color-ink-muted);
+}
+
+.publication-doi {
+    font-size: 0.8rem;
+    color: var(--color-ink-muted);
+    margin-top: 0.25rem;
+}
+
+.publication-citation {
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: 0.25rem;
 }
 
 .publication-meta span {
@@ -628,6 +664,50 @@ a:hover {
 .resource-download svg {
     width: 18px;
     height: 18px;
+}
+
+/* Editorial Work */
+.editorial-work {
+    background: var(--color-paper-warm);
+}
+
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.editorial-card {
+    background: var(--color-paper);
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border-light);
+}
+
+.editorial-card h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+    color: var(--color-accent);
+}
+
+.editorial-card p {
+    font-size: 0.95rem;
+}
+
+/* Resources Note */
+.resources-note {
+    margin-top: var(--space-xl);
+    padding: var(--space-lg);
+    background: var(--color-paper-warm);
+    border-left: 3px solid var(--color-accent);
+}
+
+.resources-note p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.resources-section {
+    padding: var(--space-xl) 0 var(--space-2xl);
 }
 
 /* ============================================
